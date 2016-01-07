@@ -15,8 +15,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void startFlashingTextView(View view){
+    public void startFlashingActivity(View view){
         Intent intent = new Intent(this,FlashingTextViewActivity.class);
+        startActivity(intent);
+    }
+
+    public void startArcDiagramActivity(View view){
+        Intent intent = new Intent(this,ArcDiagramActivity.class);
         startActivity(intent);
     }
 
