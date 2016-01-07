@@ -42,6 +42,7 @@ public class FlashingTextView extends TextView{
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
         Log.d(TAG, "-----onSizeChanged-----");
+        //初始化
         if (mViewWidth == 0){
             mViewWidth = getMeasuredWidth();
             if (mViewWidth > 0){
@@ -57,6 +58,7 @@ public class FlashingTextView extends TextView{
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         Log.d(TAG,"-----onDraw-----mTranslate:"+mTranslate);
+        //通过矩阵的方式不断平移渐变效果，从而在绘制文字时，产生动态的闪动效果
         if (mGradientMatrix != null){
             mTranslate+=mViewWidth/5;
             if (mTranslate > mViewWidth){
