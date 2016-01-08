@@ -25,4 +25,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void startRxJavaActivity(View view){
+        Intent intent = new Intent(this,RxJavaActivity.class);
+        startActivity(intent);
+    }
+
 }

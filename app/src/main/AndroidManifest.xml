@@ -30,6 +30,12 @@
                   android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
+
+        <activity android:name=".activity.RxJavaActivity"
+                  android:label="@string/app_name"
+                  android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
     </application>
 
 </manifest>
