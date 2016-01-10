@@ -18,23 +18,25 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
-        <activity android:name=".activity.FlashingTextViewActivity"
-                  android:label="@string/app_name"
-                  android:theme="@style/AppTheme.NoActionBar">
-
+        <activity
+            android:name=".activity.FlashingTextViewActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
-
-        <activity android:name=".activity.ArcDiagramActivity"
-                  android:label="@string/app_name"
-                  android:theme="@style/AppTheme.NoActionBar">
-
+        <activity
+            android:name=".activity.ArcDiagramActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
-
-        <activity android:name=".activity.RxJavaActivity"
-                  android:label="@string/app_name"
-                  android:theme="@style/AppTheme.NoActionBar">
-
+        <activity
+            android:name=".activity.RxJavaActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".activity.AudioBarActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>
 

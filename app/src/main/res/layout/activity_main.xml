@@ -25,4 +25,10 @@
         android:layout_height="wrap_content"
         android:text="startRxJavaActivity"/>
 
+    <Button
+        android:onClick="startAudioBarActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="startAudioBarActivity"/>
+
 </LinearLayout>
