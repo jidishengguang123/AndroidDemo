@@ -66,6 +66,7 @@ public class WatchView extends View{
 
         //绘制刻度线、刻度值
         for (int i = 0;i < 24;i++){
+            //绘制0、3、6、9点时刻
             if (i == 0 || i == 6 || i == 12 || i == 18){
                 mPaintDegree.setStrokeWidth(5);
                 mPaintDegree.setTextSize(30);
