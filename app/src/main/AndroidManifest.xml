@@ -44,6 +44,12 @@
             android:label="@string/title_activity_watch_view"
             android:theme="@style/FullscreenTheme">
         </activity>
+        <activity
+            android:name=".activity.AnnotationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_watch_view"
+            android:theme="@style/FullscreenTheme">
+        </activity>
     </application>
 
 </manifest>

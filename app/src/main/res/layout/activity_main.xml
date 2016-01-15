@@ -37,4 +37,10 @@
         android:layout_height="wrap_content"
         android:text="startWatchViewActivity"/>
 
+    <Button
+        android:onClick="startAnnotationActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="startAnnotationActivity"/>
+
 </LinearLayout>
