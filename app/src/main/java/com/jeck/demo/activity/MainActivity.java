@@ -44,4 +44,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,AnnotationActivity.class);
         startActivity(intent);
     }
+
+    public void startXfermodeViewActivity(View view){
+        Intent intent = new Intent(this,XfermodeViewActivity.class);
+        startActivity(intent);
+    }
 }
