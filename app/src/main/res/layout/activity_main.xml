@@ -38,7 +38,13 @@
         android:text="startWatchViewActivity"/>
 
     <Button
-        android:onClick="startAnnotationActivity"
+    android:onClick="startAnnotationActivity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="startAnnotationActivity"/>
+
+    <Button
+        android:onClick="startRetrofitActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="startAnnotationActivity"/>

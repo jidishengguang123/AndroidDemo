@@ -25,6 +25,7 @@ import rx.schedulers.Schedulers;
  */
 public class RxJavaActivity extends Activity {
     private TextView mCountTextView;
+    private Subscriber mSubscriber;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +35,18 @@ public class RxJavaActivity extends Activity {
         mCountTextView = (TextView) findViewById(R.id.count_textView);
     }
 
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        //取消订阅
+        if (!mSubscriber.isUnsubscribed()){
+            mSubscriber.unsubscribe();
+        }
+    }
+
     public void count(View view) {
+        //当 Observable 被订阅的时候，OnSubscribe 的 call() 方法会自动被调用
         Observable.OnSubscribe<String> onSubscribe = new Observable.OnSubscribe<String>() {
             @Override
             public void call(Subscriber<? super String> subscriber) {
@@ -49,25 +61,28 @@ public class RxJavaActivity extends Activity {
                 subscriber.onCompleted();
             }
         };
+
+        mSubscriber = new Subscriber<String>() {
+            @Override
+            public void onCompleted() {
+                Toast.makeText(RxJavaActivity.this, "计时时间到了！！！！", Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onError(Throwable e) {
+
+            }
+
+            @Override
+            public void onNext(String t) {
+                mCountTextView.setText(t);
+            }
+        };
+
         Observable.create(onSubscribe)
-                .subscribeOn(Schedulers.newThread())
+                .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Subscriber<String>() {
-                    @Override
-                    public void onCompleted() {
-                        Toast.makeText(RxJavaActivity.this, "计时时间到了！！！！", Toast.LENGTH_LONG).show();
-                    }
-
-                    @Override
-                    public void onError(Throwable e) {
-
-                    }
-
-                    @Override
-                    public void onNext(String t) {
-                        mCountTextView.setText(t);
-                    }
-                });
+                .subscribe(mSubscriber);
     }
 
 }
