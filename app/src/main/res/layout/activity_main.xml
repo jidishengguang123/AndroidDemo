@@ -49,4 +49,10 @@
         android:layout_height="wrap_content"
         android:text="startAnnotationActivity"/>
 
+    <Button
+        android:onClick="startXfermodeViewActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="startXfermodeViewActivity"/>
+
 </LinearLayout>
