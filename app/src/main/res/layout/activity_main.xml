@@ -7,52 +7,58 @@
     android:orientation="vertical"
     tools:context=".activity.MainActivity">
 
-   <Button
-       android:onClick="startFlashingActivity"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="FlashingTextViewActivity"/>
-
     <Button
-        android:onClick="startArcDiagramActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="startFlashingActivity"
+        android:text="FlashingTextViewActivity"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startArcDiagramActivity"
         android:text="startArcDiagramActivity"/>
 
     <Button
-        android:onClick="startRxJavaActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="startRxJavaActivity"
         android:text="startRxJavaActivity"/>
 
     <Button
-        android:onClick="startAudioBarActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="startAudioBarActivity"
         android:text="startAudioBarActivity"/>
 
     <Button
-        android:onClick="startWatchViewActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="startWatchViewActivity"
         android:text="startWatchViewActivity"/>
 
     <Button
-    android:onClick="startAnnotationActivity"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="startAnnotationActivity"/>
-
-    <Button
-        android:onClick="startRetrofitActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="startAnnotationActivity"
         android:text="startAnnotationActivity"/>
 
     <Button
-        android:onClick="startXfermodeViewActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="startRetrofitActivity"
+        android:text="startAnnotationActivity"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startXfermodeViewActivity"
         android:text="startXfermodeViewActivity"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startFirstEventbusActivity"
+        android:text="startFirstEventbusActivity"/>
 
 </LinearLayout>

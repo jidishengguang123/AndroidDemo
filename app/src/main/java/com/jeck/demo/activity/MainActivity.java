@@ -49,4 +49,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,RetrofitActivity.class);
         startActivity(intent);
     }
+
+    public void startFirstEventbusActivity(View view){
+        Intent intent = new Intent(this,FirstEventbusActivity.class);
+        startActivity(intent);
+    }
 }
