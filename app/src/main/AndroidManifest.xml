@@ -59,9 +59,13 @@
             android:theme="@style/FullscreenTheme">
         </activity>
         <activity android:name=".activity.FirstEventbusActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize"
+                  android:label="FirstEventbusActivity"
                   android:theme="@style/FullscreenTheme">
         </activity>
         <activity android:name=".activity.SecondEventbusActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize"
+                  android:label="FirstEventbusActivity"
                   android:theme="@style/FullscreenTheme">
         </activity>
     </application>

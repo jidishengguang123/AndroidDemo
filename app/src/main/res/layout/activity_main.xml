@@ -10,54 +10,72 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_select_bg"
         android:onClick="startFlashingActivity"
         android:text="FlashingTextViewActivity"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_select_bg"
         android:onClick="startArcDiagramActivity"
         android:text="startArcDiagramActivity"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_select_bg"
         android:onClick="startRxJavaActivity"
         android:text="startRxJavaActivity"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_select_bg"
         android:onClick="startAudioBarActivity"
         android:text="startAudioBarActivity"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_select_bg"
         android:onClick="startWatchViewActivity"
         android:text="startWatchViewActivity"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_select_bg"
         android:onClick="startAnnotationActivity"
         android:text="startAnnotationActivity"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_select_bg"
         android:onClick="startRetrofitActivity"
         android:text="startAnnotationActivity"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_select_bg"
         android:onClick="startXfermodeViewActivity"
         android:text="startXfermodeViewActivity"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_select_bg"
         android:onClick="startFirstEventbusActivity"
         android:text="startFirstEventbusActivity"/>
 
