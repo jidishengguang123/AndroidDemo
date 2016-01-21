@@ -23,7 +23,7 @@ public class AppListActivity extends AppCompatActivity implements AdapterView.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_app_list);
         mAppListView = (ListView) findViewById(R.id.app_list);
         mAppListView.setOnItemClickListener(this);
     }

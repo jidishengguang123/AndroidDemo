@@ -1,52 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".activity.AppListActivity">
-
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
     <Button
-        android:onClick="showAllApp"
+        android:onClick="showAppList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="21sp"
-        android:text="ALL APP"/>
+        android:text="显示应用列表"/>
+
 
     <Button
-        android:onClick="showSystemApp"
+        android:onClick="showActivityManagerMemoryInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
         android:textSize="21sp"
-        android:text="SYSTEM APP"/>
+        android:text="ActivityManager.MemoryInfo"/>
 
     <Button
-        android:onClick="show3rdApp"
+        android:onClick="showDebugMemoryInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
         android:textSize="21sp"
-        android:text="3RD APP"/>
+        android:text="Debug.MemoryInfo"/>
 
     <Button
-        android:onClick="showSdcardApp"
+        android:onClick="showRunningAppProcessInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
         android:textSize="21sp"
-        android:text="SDCARD APP"/>
+        android:text="RunningAppProcessInfo"/>
 
-    <ListView
-        android:id="@+id/app_list"
+    <Button
+        android:onClick="showRunningServiceInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2dp">
-
-    </ListView>
+        android:layout_marginTop="2dp"
+        android:textSize="21sp"
+        android:text="RunningServiceInfo"/>
+    
 </LinearLayout>
