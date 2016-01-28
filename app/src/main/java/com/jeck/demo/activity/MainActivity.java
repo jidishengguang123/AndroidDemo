@@ -54,4 +54,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,FirstEventbusActivity.class);
         startActivity(intent);
     }
+
+    public void startPaletteActivity(View view){
+        Intent intent = new Intent(this,PaletteActivtiy.class);
+        startActivity(intent);
+    }
 }
