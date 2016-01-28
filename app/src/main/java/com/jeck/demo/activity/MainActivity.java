@@ -64,4 +64,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,ShadowActivity.class);
         startActivity(intent);
     }
+
+    public void startClippingActivity(View view){
+        Intent intent = new Intent(this,ClippingActivity.class);
+        startActivity(intent);
+    }
 }

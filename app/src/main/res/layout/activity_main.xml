@@ -102,6 +102,14 @@
                 android:background="@drawable/button_select_bg"
                 android:onClick="startShadowActivity"
                 android:text="startShadowActivity"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_select_bg"
+                android:onClick="startClippingActivity"
+                android:text="startClippingActivity"/>
             
         </LinearLayout>
     </ScrollView>
