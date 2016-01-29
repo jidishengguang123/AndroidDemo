@@ -76,6 +76,8 @@
         </activity>
         <activity android:name=".activity.ClippingActivity">
         </activity>
+        <activity android:name=".activity.RecyclerViewActivity">
+        </activity>
     </application>
 
 </manifest>

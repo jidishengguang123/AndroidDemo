@@ -69,4 +69,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,ClippingActivity.class);
         startActivity(intent);
     }
+
+    public void startRecyclerViewActivity(View view){
+        Intent intent = new Intent(this,RecyclerViewActivity.class);
+        startActivity(intent);
+    }
 }
