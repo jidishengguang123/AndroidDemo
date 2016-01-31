@@ -74,4 +74,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,RecyclerViewActivity.class);
         startActivity(intent);
     }
+
+    public void startTransition1Activity(View view){
+        Intent intent = new Intent(this,Transition1Activity.class);
+        startActivity(intent);
+    }
 }
