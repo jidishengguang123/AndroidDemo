@@ -78,6 +78,14 @@
         </activity>
         <activity android:name=".activity.RecyclerViewActivity">
         </activity>
+
+        <service
+            android:name=".service.MessengerService"
+            android:process=":remote">
+        </service>
+
+        <activity android:name=".activity.MessengerActivity">
+        </activity>
     </application>
 
 </manifest>
