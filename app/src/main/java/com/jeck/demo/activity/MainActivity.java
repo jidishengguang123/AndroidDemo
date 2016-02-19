@@ -74,4 +74,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,RecyclerViewActivity.class);
         startActivity(intent);
     }
+
+    public void startMessengerActivity(View view){
+        Intent intent = new Intent(this,MessengerActivity.class);
+        startActivity(intent);
+    }
 }
